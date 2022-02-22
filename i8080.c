@@ -149,7 +149,7 @@ i8080 *create8080(void) {
     cpu->opcodeTable[0xDB] = in;
 
     cpu->opcodeTable[0xC3] = jump;
-    cpu->opcodeTable[0xC8] = jump;
+    cpu->opcodeTable[0xCB] = jump;
     cpu->opcodeTable[0xC9] = ret;
     cpu->opcodeTable[0xD9] = ret;
     for(int i = 0xCD; i < 0xFF; i += 16) {
