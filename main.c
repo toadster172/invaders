@@ -58,7 +58,7 @@ int main(int argc, char *argv[]) {
         while(machine->cpu->cycles < 16667) {
             executeInstruction(machine->cpu);
             if(machine->cpu->halt) {
-                printf("\nCPU has halted!\n");
+                printf("CPU has halted!\n");
                 graphicsEnd(&window, &renderer, &texture);
                 freeMachine(machine);
                 return 1;
@@ -70,7 +70,7 @@ int main(int argc, char *argv[]) {
         while(machine->cpu->cycles < 16667) {
             executeInstruction(machine->cpu);
             if(machine->cpu->halt) {
-                printf("\nCPU has halted!\n");
+                printf("CPU has halted!\n");
                 graphicsEnd(&window, &renderer, &texture);
                 freeMachine(machine);
                 return 1;
