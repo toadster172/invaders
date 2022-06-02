@@ -243,7 +243,7 @@ void decimalAdjust(i8080 *cpu) {
     } else {
         clearAC(cpu);
     }
-    if(((cpu->a & 0xF0) > 90) | checkCarry(cpu)) {
+    if(((cpu->a & 0xF0) > 0x90) | checkCarry(cpu)) {
         setCarry(cpu);
         cpu->a += 0x60;
     } else {
