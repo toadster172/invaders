@@ -2,7 +2,7 @@
 #define SDLFUNCTIONS_H
 
 #include <stdint.h>
-#include <SDL2/SDL.h>
+#include <SDL.h>
 #include "invaders.h"
 
 void graphicsInit(SDL_Window **window, SDL_Renderer **renderer, SDL_Texture **texture, uint8_t scale);
